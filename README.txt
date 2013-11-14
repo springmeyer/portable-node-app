@@ -17,6 +17,7 @@ but do NOT try to run it from within the zip archive.
 2) Find and install the install_me_first.exe
 
 Installing this requires administrator priveleges, but only needs to be run once.
+
 If you do not install it you will get an error when TileMill starts like: 
 
     "The application has failed to start because MSVCP100.dll was not found..."
@@ -25,7 +26,7 @@ This is the C++ 2010 runtime (vcredist_x86) and can also be downloaded from:
 
 http://www.microsoft.com/download/en/details.aspx?id=5555
 
-3) Then run TileMill by double clicking the 'TileMill.exe'
+3) Then run TileMill by double clicking the 'start.bat'
 
 
 ### Details

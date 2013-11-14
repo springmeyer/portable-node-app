@@ -6,7 +6,6 @@
 \gyp\
 \deps\
 \Default\
-\src\
 \tools\
 \Debug\
 \expresso\
