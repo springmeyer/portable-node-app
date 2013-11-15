@@ -1,5 +1,5 @@
 @rem settings
-set SOURCE=tilemill
+set SOURCE=tilestream
 set DEST=portable-%SOURCE%-v1
 set NODEEXE="C:\Program Files (x86)\nodejs\node.exe"
 set PATH="C:\Program Files (x86)\7-Zip";%PATH%

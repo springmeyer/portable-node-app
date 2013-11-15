@@ -1,6 +1,6 @@
-# TileMill Portable
+# TileStream Portable
 
-This is portable TileMill packaged for windows.
+This is portable app packaged for windows.
 
  - Works with minimal administrator permissions
  - Can be run from a usb drive
@@ -38,12 +38,11 @@ http://www.microsoft.com/download/en/details.aspx?id=5555
 
 4. After the app starts, a blocked firewall warning may pop up.
 
-If you have admin you can allow access for TileMill's internal process:
+If you have admin you can allow access for:
 
-    "Evented I/O for V8 Javascript".
+    Evented I/O for V8 Javascript
 
 If you do not have admin, Windows XP should still allow TileMill to work
 and you should be able to ignore it.
 
-But on Windows Vista/7/8 you must have administrative access at least once
-to allow giving access for TileMill to the firewall by accepting this pop-up.
+But on Windows Vista/7/8 you must have administrative access at least once.
