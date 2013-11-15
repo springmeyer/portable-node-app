@@ -1,10 +1,10 @@
 # TileStream Portable
 
-This is portable app packaged for windows and mac.
+This is portable app to read mbtiles.
 
- - Works with minimal administrator permissions
  - Can be run from a usb drive
  - No dependencies or install needed, just uncompress and run
+ - Works with minimal administrator permissions
 
 Windows build: http://cl.ly/173Q060y0J0d
 
@@ -12,17 +12,17 @@ Mac OS X build: http://cl.ly/2Y180k1E2e3E
 
 ### Caveats
 
- - Don't try to run from within this zip archive, make sure to extract it
+ - Don't try to run from within this archive, make sure to extract it
  - This app runs in your web browser: Please use Chrome or Firefox not IE
 
 ### Usage
 
-1. Open the archive and read the README.txt (good job!)
+1. Open the archive and read the README.txt
 2. Extract the 'app' folder somewhere
 3. Open the 'app' folder in its new location
-4. Double-click the'.bat' file inside the 'app' folder
+4. Double-click the 'start-tilestream' file inside the 'app' folder
 5. This will open a console and your web browser
-6. Add 'mbtiles' to the app\tiles folder to view them
+6. Add 'mbtiles' to the `app/tiles` folder to view them
 7. Stop the app by closing the console
 
 ### Troubleshooting
@@ -31,7 +31,7 @@ Mac OS X build: http://cl.ly/2Y180k1E2e3E
 
 Try reloading the page in your browser.
 
-2. Page does not load
+2. Page still does not load
 
 Find the open app console and look for errors: report them to dane@mapbox.com
 
@@ -66,9 +66,12 @@ http://www.microsoft.com/download/en/details.aspx?id=5555
 If you want to re-package this app first install node.js then do:
 
     git clone https://github.com/springmeyer/portable-node-app.git
-	cd portable-node-app
-	git clone https://github.com/mapbox/tilestream.git
-	cd tilestream
-	npm install
-	cd ../
-	build.bat
+    cd portable-node-app
+    git clone https://github.com/mapbox/tilestream.git
+    cd tilestream
+    npm install
+    cd ../
+    # on windows
+    build.bat
+    # on mac
+    ./build.sh
