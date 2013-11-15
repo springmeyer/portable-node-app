@@ -4,6 +4,7 @@ This is portable app packaged for windows.
 
  - Works with minimal administrator permissions
  - Can be run from a usb drive
+ - No dependencies or install needed, just uncompress and run
 
 ### Caveats
 
