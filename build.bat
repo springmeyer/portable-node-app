@@ -22,7 +22,7 @@ xcopy /q /i /s /exclude:excludes.txt %SOURCE% .\%DEST%\%SOURCE%
   echo .\%SOURCE%\node.exe .\%SOURCE%\index.js
   echo pause
 ) > .\%DEST%\start.bat
-@rem copy vcredist_x86.exe .\%DEST%\
+copy vcredist_x86.exe .\%DEST%\
 copy README.txt .\%DEST%\
 xcopy /Y %NODEEXE% .\%DEST%\%SOURCE%\node.exe
 7z a %DEST%.zip .\%DEST%\
