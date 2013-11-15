@@ -9,21 +9,40 @@ This is portable app packaged for windows.
 ### Caveats
 
  - Don't try to run from within this zip archive, make sure to extract it
+ - This app runs in your web browser: Please use Chrome or Firefox not IE
 
 ### Usage
 
-1. Extract the archive to your desired location
-2. Start the app by double-click the `start.bat`
-3. This will open a console and your web browser
-4. Stop the app by closing the console
+1. Open the archive and read the README.txt (good job!)
+2. Extract the 'app' folder somewhere
+3. Open the 'app' folder in its new location
+4. Double-click the'.bat' file inside the 'app' folder
+5. This will open a console and your web browser
+6. Add 'mbtiles' to the app\tiles folder to view them
+7. Stop the app by closing the console
 
 ### Troubleshooting
 
-1. If your web browser opens but the page does not load try refreshing it
+1. Page does not load
 
-2. If the page still does not load, look at the console for errors
+Try reloading the page in your browser.
 
-3. Missing C++ runtime
+2. Page does not load
+
+Find the open app console and look for errors: report them to dane@mapbox.com
+
+3. After the app starts, a blocked firewall warning may pop up.
+
+If you have admin you can allow access for:
+
+    Evented I/O for V8 Javascript
+
+If you do not have admin, Windows XP should still allow TileMill to work
+and you should be able to ignore it.
+
+But on Windows Vista/7/8 you must have administrative access at least once.
+
+4. Missing C++ runtime
 
 If you see an error like:
 
@@ -37,13 +56,15 @@ This is the C++ 2010 runtime (vcredist_x86) and can also be downloaded from:
 
 http://www.microsoft.com/download/en/details.aspx?id=5555
 
-4. After the app starts, a blocked firewall warning may pop up.
 
-If you have admin you can allow access for:
+### Developers
 
-    Evented I/O for V8 Javascript
+If you want to re-package this app first install node.js then do:
 
-If you do not have admin, Windows XP should still allow TileMill to work
-and you should be able to ignore it.
-
-But on Windows Vista/7/8 you must have administrative access at least once.
+    git clone https://github.com/springmeyer/portable-node-app.git
+	cd portable-node-app
+	git clone https://github.com/mapbox/tilestream.git
+	cd tilestream
+	npm install
+	cd ../
+	build.bat

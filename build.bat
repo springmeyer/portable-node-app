@@ -13,18 +13,20 @@ del %DEST%.zip
 
 @rem build
 mkdir .\%DEST%\
-xcopy /q /i /s /exclude:excludes.txt %SOURCE% .\%DEST%\%SOURCE%
+mkdir .\%DEST%\app
+mkdir .\%DEST%\app\mbtiles
+xcopy /q /i /s /exclude:excludes.txt %SOURCE% .\%DEST%\app\%SOURCE%
 (
   echo @echo off
   echo echo Close this window to stop the server
   echo echo Starting up browser at %URL%
   echo start %URL%
-  echo .\%SOURCE%\node.exe .\%SOURCE%\index.js
+  echo .\%SOURCE%\node.exe .\%SOURCE%\index.js --tiles=.\mbtiles
   echo pause
-) > .\%DEST%\start.bat
-copy vcredist_x86.exe .\%DEST%\
+) > .\%DEST%\app\start-%SOURCE%.bat
+copy vcredist_x86.exe .\%DEST%\app\
 copy README.txt .\%DEST%\
-xcopy /Y %NODEEXE% .\%DEST%\%SOURCE%\node.exe
+xcopy /Y %NODEEXE% .\%DEST%\app\%SOURCE%\node.exe
 7z a %DEST%.zip .\%DEST%\
 pause
 
