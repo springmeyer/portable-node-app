@@ -1,37 +1,42 @@
 # TileMill Portable
 
-This is a minimal version of TileMill packaged for windows.
+This is portable TileMill packaged for windows.
 
-The goal is to be able to use TileMill with the least amount of 
-administrator permissions and to be able to run it from anywhere
-on your system you like, including from a usb drive.
+ - Works with minimal administrator permissions
+ - Can be run from a usb drive
 
-Quickstart
-==========
+### Caveats
 
-1) Extract tilemill-win.zip
+ - Don't try to run from within this zip archive, make sure to extract it
 
-You can extract/unzip it anywhere of your choosing
-but do NOT try to run it from within the zip archive.
+### Usage
 
-2) Find and install the install_me_first.exe
+1. Extract the archive to your desired location
+2. Start the app by double-click the `start.bat`
+3. This will open a console and your web browser
+4. Stop the app by closing the console
+
+### Troubleshooting
+
+1. If your web browser opens but the page does not load try refreshing it
+
+2. If the page still does not load, look at the console for errors
+
+3. Missing C++ runtime
+
+If you see an error like:
+
+    The application has failed to start because MSVCP100.dll was not found...
+
+Then double-click and install the 'vcredist_x86.exe'.
 
 Installing this requires administrator priveleges, but only needs to be run once.
-
-If you do not install it you will get an error when TileMill starts like: 
-
-    "The application has failed to start because MSVCP100.dll was not found..."
 
 This is the C++ 2010 runtime (vcredist_x86) and can also be downloaded from:
 
 http://www.microsoft.com/download/en/details.aspx?id=5555
 
-3) Then run TileMill by double clicking the 'start.bat'
-
-
-### Details
-
-After TileMill starts, a blocked firewall warning will pop up.
+4. After the app starts, a blocked firewall warning may pop up.
 
 If you have admin you can allow access for TileMill's internal process:
 
