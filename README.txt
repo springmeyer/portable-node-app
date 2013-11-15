@@ -1,10 +1,14 @@
 # TileStream Portable
 
-This is portable app packaged for windows.
+This is portable app packaged for windows and mac.
 
  - Works with minimal administrator permissions
  - Can be run from a usb drive
  - No dependencies or install needed, just uncompress and run
+
+Windows build: http://cl.ly/173Q060y0J0d
+
+Mac OS X build: http://cl.ly/2Y180k1E2e3E
 
 ### Caveats
 
